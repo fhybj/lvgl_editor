@@ -4,8 +4,11 @@
         <prop name="subject" type="subject"/>
     </api>
     <styles>
-        <style name="box" transform_height="0" transform_width="0"
+        <style name="box" transform_height="0" transform_width="0" 
         />
+        <style name="main"  border_color="0xffa020" />
+        <style name="bs" bg_color="0xffa020" border_color="0xffa020" />
     </styles>
-    <view extends="lv_checkbox" bind_checked="$subject" styles="box:indicator:pressed" ></view>
+    <view extends="lv_checkbox" bind_checked="$subject"
+     styles=" main:indicator box:indicator:pressed bs:indicator:checked" ></view>
 </component>
